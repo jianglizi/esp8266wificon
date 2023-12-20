@@ -4,6 +4,7 @@ esp8266 网页配网库
 
 
 示例
+
 #include <wificon.h>
 
 wificon wfc;
@@ -19,6 +20,9 @@ void loop() {
 }
 
 api
+
 wifiBegin;（必要）
+
 wifiLoop;（必要）
+
 clearWiFi;（可选）
