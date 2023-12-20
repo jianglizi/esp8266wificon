@@ -1,0 +1,33 @@
+#######################################
+
+# Syntax Coloring Map For wificon	
+
+####################################### 
+
+# Class (KEYWORD1)
+
+#######################################
+
+
+
+wificon KEYWORD1
+
+
+
+#######################################
+
+# Methods and Functions (KEYWORD2)
+
+#######################################	
+
+
+wifiBegin   KEYWORD2
+wifiLoop    KEYWORD2
+clearWiFi   KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ 
+
+wfc LITERAL1
