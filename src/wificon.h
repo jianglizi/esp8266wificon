@@ -78,7 +78,7 @@ const char *page_html = "\
 void wificon::wifiBegin(void)
 {
     Serial.begin(115200);
-    mySerial(, true);
+    mySerial("", true);
     WiFi.hostname("Smart-ESP8266"); // 设置ESP8266设备名
     // SPIFFS.format();
     if (SPIFFS.begin())
@@ -101,7 +101,8 @@ void wificon::wifiLoop(void)
     }
     if (boolwifidetect)
     {
-        wifiDetecttimes++ if (wifiDetecttimes >= DetectTimes)
+        wifiDetecttimes++ ;
+        if (wifiDetecttimes >= DetectTimes)
         {
             if (WiFi.status() != WL_CONNECTED)
             {
@@ -252,7 +253,7 @@ void wificon::STA_CON(String Mname, String Mssid)
         i++;
         if (i > SECtime - 1)
         {
-            mySerial(, true);
+            mySerial("", true);
             mySerial("WiFi连接超时,正在重试", true);
             AP_GetWifi();
             break;
@@ -260,7 +261,7 @@ void wificon::STA_CON(String Mname, String Mssid)
     }
     if (WiFi.isConnected())
     {
-        mySerial(, true);
+        mySerial("", true);
         boolwifistatus = true;
         dnsServer.stop();
         server.close();
@@ -270,7 +271,7 @@ void wificon::STA_CON(String Mname, String Mssid)
         mySerial(WiFi.localIP().toString(), true);
     }
     mySerial(">>>>> end <<<<<", true);
-    mySerial(, true);
+    mySerial("", true);
 }
 
 void wificon::AP_GetWifi(void)
