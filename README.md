@@ -30,11 +30,11 @@ void loop() {
 
 api
 
-wifiBegin;（必要）
+void wifiBegin(void);（必要）
 
-wifiLoop;（必要）
+void wifiLoop(void);（必要）
 
-clearWiFi;（可选）
+void clearWiFi(void);（可选）
 
 void setSerialOff(void);关闭串口输出
 
