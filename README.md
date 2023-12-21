@@ -36,6 +36,12 @@ wifiLoop;（必要）
 
 clearWiFi;（可选）
 
+void setSerialOff(void);关闭串口输出
+
+void setSerialOn(void);打开串口输出（默认开）
+
+void setWifiDetectOff(void);（关闭WiFi断线检测，默认关，必要条件wifiLoop()）
+
 
 #### 参与贡献
 
